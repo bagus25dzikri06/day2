@@ -1,1 +1,1 @@
-# day2
+# JavaScript with Konohamaru 2
