@@ -1,1 +1,2 @@
-# JavaScript with Konohamaru 2
+# JavaScript Fundamental with Konohamaru 2
+Tugas Kedua
