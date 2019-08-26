@@ -17,4 +17,14 @@ ARRAY nilai = []
 SORT nilai -> FUNCTION (nilai1, nilai2) {RETURN nilai1 < nilai2}
 if ((nilai[index] <= 100) && (nilai[index] >= 80)) {
    nilai[index] = A
+} else if ((nilai[index] < 80) && (nilai[index] >= 65)) {
+   nilai[index] = B
+} else if ((nilai[index] < 65) && (nilai[index] >= 50)) {
+   nilai[index] = C
+} else if ((nilai[index] < 50) && (nilai[index] >= 35)) {
+   nilai[index] = D
+} else if ((nilai[index] < 35) && (nilai[index] >= 0)) {
+   nilai[index] = E
+} else {
+   nilai[index] = invalid
 }
