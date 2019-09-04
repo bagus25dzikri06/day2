@@ -1,9 +1,8 @@
-
 /*
 ======================
 Highest Global Minimum
 ======================
-Name :_____________
+Name : Bagus Dzikri Hidayat
 [INSTRUCTIONS]
 highestGlobalMinimum adalah sebuah function yang menerima dua parameter, dan keduanya merupakan array of number.
 Function akan mendapatkan angka minimum dari masing-masing array yang diinput sebagai parameter, kemudian bandingkan kedua angka tersebut.
@@ -25,6 +24,36 @@ karena 1 < 8, maka function highestGlobalMinimum akan me-return 8.
 
 function highestGlobalMinimum(firstArr, secondArr) {
   // only write code here
+  /* 1. Inisialisasi nilai minimum dari masing-masing array */
+  var minFirst = 0
+  var minSecond = 0
+  
+  /* 2. Mencari nilai minimum dari semua elemen array yang pertama */
+  for (var i = 0; i < firstArr.length; i++) {
+     if (firstArr[i] < firstArr[i + 1]) {
+        minFirst = firstArr[i]
+     } else {
+        minFirst = firstArr[i + 1]
+     }
+     return minFirst
+  }
+
+  /* 3. Mencari nilai minimum dari semua elemen array yang kedua */
+  for (var j = 0; j < secondArr.length; j++) {
+     if (secondArr[i] < secondArr[i + 1]) {
+        minSecond = secondArr[i]
+     } else {
+        minSecond = secondArr[i + 1]
+     }
+     return minSecond
+  }
+
+  /* 4. Mencari nilai maksimum dari nilai minimum kedua array */
+  if (minFirst < minSecond) {
+     return minSecond
+  } else {
+     return minFirst
+  }
 }
 
 console.log(highestGlobalMinimum([1, 1, 1] , [8, 15, 17, 9])); // 8

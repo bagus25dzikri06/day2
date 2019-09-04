@@ -2,7 +2,7 @@
 ========================
 The Alphabetical Express
 ========================
-Name :_____________
+Name : Bagus Dzikri Hidayat
 [INSTRUCTIONS]
 formTrainSeating adalah sebuah function yang menerima satu parameter berupa string.
 Ini adalah sebuah simulasi penempatan penumpang di dalam gerbong kereta.
@@ -38,6 +38,30 @@ Dilarang menggunakan sintaks .split()!
 
 function formTrainSeating(passengers) {
   // only write code here
+  var alphaCarriage = []
+  var betaCarriage = []
+  var charlieCarriage = []
+  var deltaCarriage = []
+  var ekaCarriage = []
+
+  for (var num = 0; num < passengers.length; num++) {
+     if (passengers[num] === 'A') {
+        alphaCarriage.push(passengers[num])
+     } else if (passengers[num] === 'B') {
+        betaCarriage.push(passengers[num])
+     } else if (passengers[num] === 'C') {
+        charlieCarriage.push(passengers[num])
+     } else if (passengers[num] === 'D') {
+        deltaCarriage.push(passengers[num])
+     } else if (passengers[num] === 'E') {
+        ekaCarriage.push(passengers[num])
+     } else {
+        ekaCarriage
+     }
+  }
+  
+  var carriageForm = [alphaCarriage, betaCarriage, charlieCarriage, deltaCarriage, ekaCarriage]
+  return carriageForm
 }
 
 console.log(formTrainSeating('ABDCCCE')); // [['A'], ['B'], ['C', 'C', 'C'], ['D'], ['E']]
